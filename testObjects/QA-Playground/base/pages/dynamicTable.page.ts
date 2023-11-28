@@ -1,5 +1,5 @@
 import { type Page } from '@playwright/test';
-import { DynamicTablePageLocators } from '../locators/dynamicsTableLocator';
+import { DynamicTablePageLocators } from '../locators/dynamicsTableLocators';
 
 export class DynamicTablePage {
     readonly dynamicTablePageLocators: DynamicTablePageLocators
@@ -17,7 +17,7 @@ export class DynamicTablePage {
                 route.abort() : route.continue();
           });
 
-        await this.page.goto('https://qaplayground.dev/apps/dynamic-table/')
+        await this.page.goto(this.dynamicTablePageLocators.DynamicTableURL)
 
         //Makes sure to get past lazy loading by indicating the page is being interacted with
         await this.page.keyboard.press('PageDown')
