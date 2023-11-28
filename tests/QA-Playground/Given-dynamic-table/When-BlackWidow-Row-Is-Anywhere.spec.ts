@@ -1,9 +1,9 @@
 import { expect, test } from '../../../testObjects/QA-Playground/base/fixtures/dynamicTableFixture'
 
-test('Then Real Name Should be  Natasha Alianovna Romanova ', async ({ dynamicTableFixture }) => {
+test('Then Real Name Should be  Natasha Alianovna Romanova', async ({ dynamicTableFixture }) => {
     const BlackWidowsCurrentRow = dynamicTableFixture.dynamicTablePageLocators.BlackWidowRowLocator
     
-    const ExpectedName = ' Natasha Alianovna Romanova '
+    const ExpectedName = 'Natasha Alianovna Romanova'
     await expect(BlackWidowsCurrentRow).toContainText(ExpectedName)
 }),
 

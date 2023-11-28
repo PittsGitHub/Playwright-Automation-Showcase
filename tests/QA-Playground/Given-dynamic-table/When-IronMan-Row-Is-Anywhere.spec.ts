@@ -17,7 +17,7 @@ test('Then Status Should Be Active', async ({ dynamicTableFixture }) => {
 test('Then Email Should be iron-man@avengers.com', async ({ dynamicTableFixture }) => {
     const IronManCurrentRow = dynamicTableFixture.dynamicTablePageLocators.IronManRowLocator
     
-    const ExpectedEmail = ' iron-man@avengers.com'
+    const ExpectedEmail = 'iron-man@avengers.com'
     await expect(IronManCurrentRow).toContainText(ExpectedEmail)
 })
 

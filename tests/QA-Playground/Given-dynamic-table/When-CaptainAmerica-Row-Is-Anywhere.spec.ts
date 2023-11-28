@@ -1,9 +1,9 @@
 import { expect, test } from '../../../testObjects/QA-Playground/base/fixtures/dynamicTableFixture'
 
-test('Then Real Name Should be  Steve Rogers ', async ({ dynamicTableFixture }) => {
+test('Then Real Name Should be  Steve Rogers', async ({ dynamicTableFixture }) => {
     const CaptainAmericaCurrentRow = dynamicTableFixture.dynamicTablePageLocators.CaptainAmericaRowLocator
     
-    const ExpectedName = ' Steve Rogers '
+    const ExpectedName = 'Steve Rogers'
     await expect(CaptainAmericaCurrentRow).toContainText(ExpectedName)
 }),
 
