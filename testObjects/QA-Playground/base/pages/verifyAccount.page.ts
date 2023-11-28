@@ -1,12 +1,12 @@
 import { type Page } from '@playwright/test';
-import { DynamicTablePageLocators } from '../locators/dynamicsTableLocators';
+import { VerifyAccountLocators } from '../locators/verifyAccountLocators';
 
-export class DynamicTablePage {
-    readonly dynamicTablePageLocators: DynamicTablePageLocators
+export class VerifyAccountPage{
+    readonly verifyAccountLocators: VerifyAccountLocators
     
     constructor(public readonly page:Page){
         this.page = page
-        this.dynamicTablePageLocators = new DynamicTablePageLocators(page)
+        this.verifyAccountLocators = new VerifyAccountLocators(page)
     }
 
     async goto(){
@@ -17,7 +17,7 @@ export class DynamicTablePage {
                 route.abort() : route.continue();
           });
 
-        await this.page.goto(this.dynamicTablePageLocators.DynamicTableURL)
+        await this.page.goto(this.verifyAccountLocators.VerifyAccountURL)
 
         //Makes sure to get past lazy loading by indicating the page is being interacted with
         await this.page.keyboard.press('PageDown')
