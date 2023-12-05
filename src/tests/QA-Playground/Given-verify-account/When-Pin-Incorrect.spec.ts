@@ -11,5 +11,5 @@ test("Then 'Success' should NOT be displayed", async ({ verifyAccountFixture, pa
   await verifyAccountFixture.verifyAccountLocators.PinInput6.fill(pinDigit)
   await page.keyboard.press('Enter')
 
-  await expect(verifyAccountFixture.verifyAccountLocators.SuccessDisplay).not.toBeVisible()
+  await expect(verifyAccountFixture.verifyAccountLocators.SuccessDisplay).toBeHidden()
 })
