@@ -1,4 +1,4 @@
-# Playwright Automation Showcase  🚀
+# Playwright Automation Showcase with GitHub CI/CD 🚀
 **[]()**
 [Latest Test Results](https://pittsgithub.github.io/Playwright-Automation-Showcase/)
 
