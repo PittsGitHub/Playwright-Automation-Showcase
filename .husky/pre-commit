@@ -2,13 +2,13 @@
 
 echo 'pre commit checklist intiated'
 
-# #Checking for styling errors
-# npm run formatCheck || 
-# (
-#     echo 'styling failed this shouldnt happen
-#             please fix the styling errors above.'
-#     false;
-# )
+#Checking for styling errors
+npm run formatCheck || 
+(
+    echo 'styling failed this shouldnt happen
+            please fix the styling errors above.'
+    false;
+)
 
 #Checking for syntax errors
 npm run lint ||
