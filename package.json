@@ -18,16 +18,20 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
     "prettier": "^3.1.0",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.2",
+    "husky": "^8.0.0"
   },
   "scripts": {
     "playwright": "playwright test --ui",
     "test": "echo %NODE_ENV% && npx playwright test",
+    "formatCheck": "prettier --ignore-path .gitignore \"**/*.+(js|ts|json)\"",
+    "formatFix": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "test:local": "cross-env NODE_ENV='local' npm run test",
     "test:dev": "cross-env NODE_ENV='dev' npm run test",
     "test:qa": "cross-env NODE_ENV='qa' npm run test",
     "lint": "eslint .",
     "lintFix": "eslint --fix",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+    "prepare": "husky install",
+    "preCommitChecks": "npm run formatFix && npm run lint"
   }
 }
