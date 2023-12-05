@@ -1,4 +1,6 @@
 # Playwright Automation Showcase  🚀
+**[Latest Test Results]([https://eff.org](https://pittsgithub.github.io/Playwright-Automation-Showcase/))**
+
 A project to showcase the playwright framework I've built using the page object model (POM) design pattern and testing against various online demo websites, written in TypeScript using the Playwright test automation Library the solution is asynchronous throughout. 
 
 It uses Eslint to check that asynchronous methods have no floating promises and prettier to keep a consistant style of code.
