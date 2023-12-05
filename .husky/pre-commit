@@ -4,6 +4,7 @@
 echo 'pre commit checklist intiated'
 
 #Checking for styling errors
+echo 'Checking for styling problems.'
 npm run formatCheck || 
 (
     echo 'styling failed this shouldnt happen
@@ -12,6 +13,7 @@ npm run formatCheck ||
 )
 
 #Checking for syntax errors
+echo 'Checking for syntactical errors.'
 npm run lint ||
 (
     echo 'syntax check failed, did we forget an await?
@@ -20,4 +22,4 @@ npm run lint ||
 )
 
 #If everything passes we can commit
-echo 'Congrats! the your code has passed the pre-commit checklist'
+echo 'Congrats! your code has passed the pre-commit checklist'
