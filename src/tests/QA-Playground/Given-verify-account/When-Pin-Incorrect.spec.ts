@@ -3,7 +3,6 @@ import { test, expect } from '../../../testObjects/QA-Playground/base/fixtures/v
 test("Then 'Success' should NOT be displayed", async ({ verifyAccountFixture, page }) => {
   //Pin provided is 9-9-9-9-9-9
   const pinDigit: string = '5'
-
   await verifyAccountFixture.verifyAccountLocators.PinInput1.fill(pinDigit)
   await verifyAccountFixture.verifyAccountLocators.PinInput2.fill(pinDigit)
   await verifyAccountFixture.verifyAccountLocators.PinInput3.fill(pinDigit)
