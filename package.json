@@ -26,7 +26,6 @@
     "playwright": "playwright test --ui",
     "test": "echo %NODE_ENV% && npx playwright test",
     "formatCheck": "prettier --ignore-path .gitignore \"**/*.+(ts|json)\"",
-    "WindowsformatCheck": "npx.cmd prettier --ignore-path .gitignore \"**/*.+(ts|json)\"",
     "formatFix": "prettier --ignore-path .gitignore --write \"**/*.+(ts|json)\"",
     "test:local": "cross-env NODE_ENV='local' npm run test",
     "test:dev": "cross-env NODE_ENV='dev' npm run test",

@@ -3,29 +3,6 @@
 
 echo 'pre commit checklist intiated'
 
-if [[ "$OS" == "Windows_NT" ]]; then
-    #checking for styling errors
-    echo 'Checking for styling problems.'
-    npm run formatCheck || 
-    (
-        echo 'styling failed.
-                please run: npm run formatFix'
-        false;
-    )
-
-    #Checking for syntax errors
-    echo 'Checking for syntactical errors.'
-    npx.cmd eslint --ignore-path .gitignore . ||
-    (
-        echo 'syntax check failed. Did we forget to await an asnyc?
-                please fix the following syntax errors above'
-        false;
-    )
-
-    #If everything passes we can commit
-    echo 'GG your code has passed the pre-commit checklist'
-
-else
     #Checking for styling errors
     echo 'Checking for styling problems.'
     npm run formatCheck || 
@@ -46,7 +23,7 @@ else
 
     #If everything passes we can commit
     echo 'GG your code has passed the pre-commit checklist'
-fi  
+
 
 
 
