@@ -4,14 +4,14 @@
 echo 'pre commit checklist intiated'
 
 if [[ "$OS" == "Windows_NT" ]]; then
-    # #checking for styling errors
-    # echo 'Checking for styling problems.'
-    # npx.cmd prettier --ignore-path .gitignore \"**/*.+(ts|json)\" || 
-    # (
-    #     echo 'styling failed.
-    #             please run: npm run formatFix'
-    #     false;
-    # )
+    #checking for styling errors
+    echo 'Checking for styling problems.'
+    npm run formatCheck || 
+    (
+        echo 'styling failed.
+                please run: npm run formatFix'
+        false;
+    )
 
     #Checking for syntax errors
     echo 'Checking for syntactical errors.'
