@@ -6,7 +6,7 @@
 - Prettier to keep a consistent style of code
 - Husky to make sure any commit is checked for consistent styling and syntax <br>
 
-*I aim to write SOLID, DRY (where possible with test code), and CLEAN test code to make 'Uncle Bob' smile. 
+*I aim to write SOLID, DRY and CLEAN test code to make 'Uncle Bob' smile. 
 But more importantly, so that the code can be easily read and extended by other QA's*<br>
 
 
