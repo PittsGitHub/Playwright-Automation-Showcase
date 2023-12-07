@@ -1,15 +1,20 @@
-# Playwright Automation Showcase with GitHub CI/CD 🚀
+# 🚀 Type Script Playwright Automation CI/CD Showcase
 **[]()**
-[Latest Test Results](https://pittsgithub.github.io/Playwright-Automation-Showcase/)
+### Packages 
+- Playwright for automating and carrying out testing
+- Eslint with a playwright plugin primarily to make sure async is correct throughout
+- Prettier to keep a consistent style of code
+- Husky to make sure any commit is checked for consistent styling and syntax <br>
 
-A project to showcase the playwright framework I've built using the page object model (POM) design pattern and testing against various online demo websites, written in TypeScript using the Playwright test automation Library the solution is asynchronous throughout. 
+*I aim to write SOLID, DRY (where possible with test code), and CLEAN test code to make 'Uncle Bob' smile. 
+But more importantly, so that the code can be easily read and extended by other QA's*<br>
 
-It uses Eslint to check that asynchronous methods have no floating promises and prettier to keep a consistant style of code.
 
-My goal is to write SOLID, DRY (where possible with test code), and CLEAN test code to make 'Uncle Bob' smile. 
+### Sites Tested Against:
+- https://qaplayground.dev/
+- https://automationintesting.online/booking/<br>
 
-But more importantly, so that the code can be easily read and extended by other QA's 
-
-Sites Tested Against:
-https://qaplayground.dev/
+### Latest Automated Tests:
+*The tests are run automatically on push and pull requests*
+[Results](https://pittsgithub.github.io/Playwright-Automation-Showcase/)
 
