@@ -2,7 +2,6 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "dotenv": "^16.3.1",
-    "octokit": "^3.1.2",
     "playwright": "^1.40.0",
     "ts-node": "^10.9.1"
   },

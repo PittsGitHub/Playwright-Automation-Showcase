@@ -12,7 +12,7 @@ switch (process.env.NODE_ENV) {
     dotenv.config({ path: './environments/qa.env' })
     break
   default:
-    dotenv.config({ path: './environments/qa.env' })
+    dotenv.config({ path: './environments/default.env' })
 }
 
 /**
@@ -34,7 +34,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [['list'], ['html']],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     ignoreHTTPSErrors: true,
@@ -44,7 +44,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     // All requests we send go to this API endpoint.
-    baseURL: 'https://api.github.com',
+    baseURL: process.env.URL,
     extraHTTPHeaders: {
       // We set this header per GitHub guidelines.
       Accept: 'application/vnd.github.v3+json',
