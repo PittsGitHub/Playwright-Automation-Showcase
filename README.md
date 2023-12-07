@@ -1,4 +1,4 @@
-# 🚀 Type Script Playwright Automation CI/CD Showcase
+# 🚀 Playwright .ts Automation CI/CD Showcase
 **[]()**
 ### Packages 
 - Playwright for automating and carrying out testing
