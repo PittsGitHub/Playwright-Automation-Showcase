@@ -1,4 +1,5 @@
 # 🚀 Playwright .ts Automation CI/CD Showcase
+[![Playwright Tests](https://github.com/PittsGitHub/Playwright-Automation-Showcase/actions/workflows/playwright.yml/badge.svg)](https://pittsgithub.github.io/Playwright-Automation-Showcase/)
 **[]()**
 ### Packages 
 - Playwright for automating and carrying out testing
