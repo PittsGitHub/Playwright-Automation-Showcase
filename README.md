@@ -15,7 +15,4 @@ But more importantly, so that the code can be easily read and extended by other 
 - https://qaplayground.dev/
 - https://automationintesting.online/booking/<br>
 
-### Latest Automated Tests:
-*The tests are run automatically on push and pull requests*
-[Results](https://pittsgithub.github.io/Playwright-Automation-Showcase/)
 
